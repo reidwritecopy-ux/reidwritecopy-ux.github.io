@@ -1,0 +1,30 @@
+/* MIDAS's own palette, the same one the studio and the videos use:
+   deep slate paper, gold accent, plenty of room. Kept in one file so the
+   three pages cannot drift apart. */
+:root{
+  --paper:#14161f; --panel:#1c1f2b; --line:#2c3040;
+  --ink:#e8eaf2; --dim:#8d93a8; --gold:#e0b04a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font:17px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+header{border-bottom:1px solid var(--line);padding:26px 22px}
+header .wrap{max-width:760px;margin:0 auto;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+header b{font-size:21px;letter-spacing:.16em;color:var(--gold)}
+header nav{margin-left:auto;display:flex;gap:18px}
+header nav a{color:var(--dim);text-decoration:none;font-size:15px}
+header nav a:hover,header nav a[aria-current]{color:var(--ink)}
+main{max-width:760px;margin:0 auto;padding:34px 22px 80px}
+h1{font-size:31px;line-height:1.25;margin:0 0 6px}
+.lede{color:var(--dim);font-size:18px;margin:0 0 30px}
+h2{font-size:20px;margin:34px 0 10px}
+p,li{color:var(--ink)}
+a{color:var(--gold)}
+ul{padding-left:22px}
+li{margin:7px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:18px 20px;margin:22px 0}
+.card p:last-child{margin-bottom:0}
+footer{border-top:1px solid var(--line);margin-top:50px;padding-top:20px;color:var(--dim);font-size:14px}
+code{background:var(--panel);padding:2px 6px;border-radius:5px;font-size:.92em}
